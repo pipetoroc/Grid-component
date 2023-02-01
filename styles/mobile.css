@@ -1,0 +1,93 @@
+:root{
+  --primary-color: #29B1AF;
+  --primary-color-bright: #BFDF34;
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%)
+}
+body{
+  height: 100vh;
+  width: 100%;
+  padding: 16px;
+  background-color: rgba(223, 220, 216, 0.603);
+  font-family: 'Karla', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+h2{
+  font-size: 1.6rem;
+}
+p{
+  font-size: 1.6rem;
+}
+.article{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  place-self: center;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.article__section{
+  padding: 24px;
+  background-color: var(--light-gray);
+}
+.article__title{
+  margin-bottom: 24px;
+  color: var(--primary-color);
+}
+.article__p{
+  margin-bottom: 20px;
+  color: var(--primary-color-bright);
+}
+.article__p--gray{
+  line-height: 24px;
+  color: var(--grayish-blue);
+}
+.article__section--green{
+  background-color: var(--primary-color);
+}
+.article__title--white{
+  color: var(--light-gray);
+  font-weight: bold;
+
+}
+span{
+  color: var(--light-gray);
+  font-size: 1.6rem;
+}
+span::before{
+  content: "$ 29";
+  font-size: 2.2rem;
+  color: var(--light-gray);
+}
+.article__p--white{
+  color: var(--light-gray);
+  font-weight: bold;
+}
+.article__button{
+  color: var(--light-gray);
+  background-color: var(--primary-color-bright);
+  padding: 20px 40px;
+  min-width: 90%;
+  max-width: 300px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.article__section--blue{
+  background-color:#29b1afde;
+}
+.article__p--white-light{
+  color: var(--light-gray);
+  line-height: 28px;
+}

@@ -16,3 +16,8 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+.article__button:hover{
+  background-color: var(--light-gray);
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
